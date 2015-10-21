@@ -118,8 +118,8 @@
 
     var map = L.map('map').setView([-23.4527429, -46.5175505], 15);
     L.esri.basemapLayer('Topographic').addTo(map);
-
-   var pedestrianDistricts = L.esri.featureLayer('http://geocidadao.guarulhos.sp.gov.br/arcgis/rest/services/Desenvolvimento/Homologacao_Producao/FeatureServer/0').addTo(map);
+    L.Icon.Default.imagePath = 'http://api.tiles.mapbox.com/mapbox.js/v1.0.0beta0.0/images';
+   var pedestrianDistricts = L.esri.featureLayer('http://geocidadao.guarulhos.sp.gov.br/arcgis/rest/services/Desenvolvimento/Homologacao_Producao/FeatureServer/1').addTo(map);
     // variable to track the layer being edited
   var currentlyEditing;
   var currentlyDeleting = false;
