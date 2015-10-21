@@ -6,8 +6,8 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
     <!-- Load Leaflet from CDN-->
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <link rel="stylesheet" href="leaflet.css" />
+    <script src="leaflet.js"></script>
 
     <!-- Load Esri Leaflet from source-->
     <script src="../src/EsriLeaflet.js"></script>
@@ -119,7 +119,7 @@
     var map = L.map('map').setView([-23.4527429, -46.5175505], 15);
     L.esri.basemapLayer('Topographic').addTo(map);
 
-   var pedestrianDistricts = L.esri.featureLayer('http://geocidadao.guarulhos.sp.gov.br/arcgis/rest/services/Desenvolvimento/Homologacao_Producao/FeatureServer/2').addTo(map);
+   var pedestrianDistricts = L.esri.featureLayer('http://geocidadao.guarulhos.sp.gov.br/arcgis/rest/services/Desenvolvimento/Homologacao_Producao/FeatureServer/0').addTo(map);
     // variable to track the layer being edited
   var currentlyEditing;
   var currentlyDeleting = false;
